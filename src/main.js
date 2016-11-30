@@ -1,10 +1,9 @@
 import Vue from 'vue'
-// import App from './App'
-import Linkgraph from './components/line'
+import App from './App'
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  template: 'Linkgraph/>',
-  components: { Linkgraph }
+  template: '<App/>',
+  components: { App }
 })
