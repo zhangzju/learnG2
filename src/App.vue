@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-    <PlotG2></PlotG2>
+    <p>
+    <router-link to="/LineG2">Line</router-link>
+    <router-link to="/PlotG2">Plot</router-link>
+    </p>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -14,7 +18,7 @@ export default {
   },
   data () {
     return {
-      msg : 'G2 graphic' 
+      msg : 'G2 graphic'
     }
   },
 
