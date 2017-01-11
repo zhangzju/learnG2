@@ -1,10 +1,12 @@
 <template>
   <div id="app">
-    <p>
-    <router-link to="/LineG2">Line</router-link>
-    <router-link to="/PlotG2">Plot</router-link>
-    </p>
-    <router-view></router-view>
+    <div class="selection">
+      <router-link to="/LineG2">Line</router-link>
+      <router-link to="/PlotG2">Plot</router-link>
+    </div>
+    <div class="show">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
@@ -25,9 +27,29 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+a {
+    text-decoration: none;
+    font-size: 15px;
+}
+
 #app {
   display:block;
   margin:10%;
+  font-family: Helvetica;
 }
+
+.selection {
+  display: flex;
+  flex-direction: row;
+  height: 20vh;
+  justify-content: center;
+}
+
+.show {
+  width: 50vh;
+  height: 50vh;
+  border: 1px solid #ffffff;
+}
+
 </style>
